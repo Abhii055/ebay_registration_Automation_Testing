@@ -49,9 +49,11 @@ public class ebayClass {
 
     @AfterMethod
     public void tearDown() {
+    	driver.navigate().refresh();
         driver.quit();
     }
 }
+
 
 
 
